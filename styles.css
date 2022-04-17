@@ -625,12 +625,12 @@ img {
 
 .backdrop-area.--backdrop-hidden > .order-popup {
 	transform: scale(0.5);
-	transition: var(--animation-type1);
+	transition: transform var(--animation-type1);
 }
 
 .backdrop-area > .order-popup {
 	transform: scale(1);
-	transition: var(--animation-type1);
+	transition: transform var(--animation-type1);
 }
 
 .order-popup__btn-close {
@@ -647,7 +647,8 @@ img {
 	box-sizing: border-box;
 	border-radius: 50%;
 	cursor: pointer;
-	transition: var(--animation-type1);
+	transition: background-color var(--animation-type1),
+		color var(--animation-type1);
 }
 
 .order-popup__btn-close:hover,
