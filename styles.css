@@ -416,7 +416,7 @@ img {
 
 .our-clients__icon {
 	color: var(--color-icon-team-inactive);
-	transition: color, var(--animation-type1);
+	transition: color var(--animation-type1);
 }
 
 .our-clients__link:hover,
