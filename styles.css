@@ -135,7 +135,7 @@ img {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--color-dark-grey);
-	transition: var(--animation-type1);
+	transition: color var(--animation-type1);
 }
 
 .header-nav__link.--active {
@@ -156,7 +156,7 @@ img {
 .header-contacts__link,
 .footer-contacts__link {
 	color: var(--color-light-grey);
-	transition: var(--animation-type1);
+	transition: color var(--animation-type1);
 }
 
 .header-contacts__link {
@@ -227,12 +227,12 @@ img {
 	font-weight: 700;
 	letter-spacing: 0.06em;
 	line-height: 1.87;
-	background: var(--color-brand);
+	background-color: var(--color-brand);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border: none;
 	cursor: pointer;
-	transition: var(--animation-type1);
+	transition: background-color var(--animation-type1);
 }
 
 .hero__button:hover,
@@ -369,11 +369,12 @@ img {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+	transition: background-color var(--animation-type1),
+		color var(--animation-type1);
 }
 
 .our-team__socials-link {
 	color: var(--color-icon-team-inactive);
-	transition: var(--animation-type1);
 }
 
 .footer-content__socials-link:not(:last-child) {
@@ -410,12 +411,12 @@ img {
 	color: var(--color-icon-team-inactive);
 	border: 1px solid var(--color-icon-team-inactive);
 	border-radius: 4px;
-	transition: var(--animation-type1);
+	transition: color var(--animation-type1), border var(--animation-type1);
 }
 
 .our-clients__icon {
 	color: var(--color-icon-team-inactive);
-	transition: var(--animation-type1);
+	transition: color, var(--animation-type1);
 }
 
 .our-clients__link:hover,
@@ -447,7 +448,8 @@ img {
 	color: var(--color-dark-grey);
 	border: none;
 	border-radius: 4px;
-	transition: var(--animation-type1);
+	transition: color var(--animation-type1),
+		background-color var(--animation-type1), box-shadow var(--animation-type1);
 }
 
 .portfolio-filters__button:hover,
@@ -472,7 +474,7 @@ img {
 
 .portfolio-projects__link {
 	display: block;
-	transition: var(--animation-type1);
+	transition: box-shadow var(--animation-type1);
 }
 
 .portfolio-projects__link:hover,
@@ -504,7 +506,7 @@ img {
 	color: var(--color-white);
 	font-size: 18px;
 	line-height: 1.55;
-	transition: var(--animation-type1);
+	transition: transform var(--animation-type1);
 }
 
 .portfolio-projects__content-box {
@@ -581,7 +583,6 @@ img {
 .footer-content__socials-link {
 	background-color: var(--color-icon-footer-inactive);
 	color: var(--color-white);
-	transition: var(--animation-type1);
 }
 
 .footer-contacts__item:first-child .footer-contacts__link {
